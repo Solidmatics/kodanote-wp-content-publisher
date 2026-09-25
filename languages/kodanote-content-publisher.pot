@@ -1,0 +1,1017 @@
+# Kodanote Content Publisher translation template.
+# Copyright (C) 2024 AutoSEO Team
+# This file is distributed under the GPL v2 or later.
+# Modified for Kodanote on 2026-09-25; see LICENSE and NOTICE.md.
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodanote Content Publisher 1.3.113\n"
+"Report-Msgid-Bugs-To: https://www.kodanote.com\n"
+"POT-Creation-Date: 2026-09-25 09:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class-kodanote-api.php:89
+msgid ""
+"Configure the Kodanote publishing API URL in wp-config.php before using "
+"outbound sync."
+msgstr ""
+
+#: includes/class-kodanote-api.php:93 includes/class-kodanote-api.php:1131
+#: includes/class-kodanote-api.php:1178
+msgid "API key is not configured"
+msgstr ""
+
+#: includes/class-kodanote-api.php:166
+msgid "Sync skipped: another sync is already in progress"
+msgstr ""
+
+#: includes/class-kodanote-api.php:260
+msgid "API request failed"
+msgstr ""
+
+#: includes/class-kodanote-api.php:265
+msgid "Invalid API response format"
+msgstr ""
+
+#: includes/class-kodanote-api.php:399
+msgid "Article missing required fields (id or title)"
+msgstr ""
+
+#. translators: 1: article title, 2: error message
+#: includes/class-kodanote-api.php:963
+#, php-format
+msgid "Failed to update article \"%1$s\": %2$s"
+msgstr ""
+
+#. translators: 1: article title, 2: error message
+#: includes/class-kodanote-api.php:1005
+#, php-format
+msgid "Failed to publish article \"%1$s\": %2$s"
+msgstr ""
+
+#. translators: 1: article title, 2: error message
+#: includes/class-kodanote-api.php:1021
+#, php-format
+msgid "Error syncing article \"%1$s\": %2$s"
+msgstr ""
+
+#. translators: %d: number of articles synced
+#: includes/class-kodanote-api.php:1058
+#, php-format
+msgid "%d article(s) synced successfully"
+msgstr ""
+
+#: includes/class-kodanote-api.php:1127
+msgid ""
+"Configure the Kodanote publishing API URL in wp-config.php before testing "
+"the connection."
+msgstr ""
+
+#: includes/class-kodanote-api.php:1154 kodanote-content-publisher.php:437
+msgid "Connection successful!"
+msgstr ""
+
+#: includes/class-kodanote-api.php:1160 kodanote-content-publisher.php:436
+msgid "Connection failed"
+msgstr ""
+
+#: includes/class-kodanote-api.php:1174
+msgid ""
+"Configure the Kodanote publishing API URL in wp-config.php before sending "
+"webhooks."
+msgstr ""
+
+#: includes/class-kodanote-api.php:1237
+msgid "Webhook delivery failed"
+msgstr ""
+
+#. translators: %s: human-readable time since last sync (e.g., "2 hours", "3 days")
+#: includes/class-kodanote-notifications.php:184
+#, php-format
+msgid "Your articles haven't synced in %s."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:185
+msgid "Your articles have never been synced."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:195
+msgid "Kodanote Sync Needed"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:197
+msgid "Keep your content fresh—sync now to publish your latest articles."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:201
+msgid "Syncing..."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:203
+#: templates/admin-dashboard.php:232
+msgid "Sync Now"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:223
+msgid "WordPress Cron Not Running"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:224
+msgid ""
+"Kodanote needs WordPress cron to automatically sync your articles. Your "
+"articles won't sync on schedule until this is fixed."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:227
+msgid "How to fix:"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:230
+msgid "Contact your hosting provider to enable WordPress cron"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:231
+msgid "Or set up a server cron job to run wp-cron.php"
+msgstr ""
+
+#. translators: %s: link to WordPress documentation
+#: includes/class-kodanote-notifications.php:236
+#, php-format
+msgid "Learn more: %s"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:237
+msgid "WordPress Cron Documentation"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:243
+msgid ""
+"In the meantime, you can manually sync articles using the \"Sync Now\" "
+"button."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:261
+#: includes/class-kodanote-notifications.php:322
+#: kodanote-content-publisher.php:2616 kodanote-content-publisher.php:2627
+#: kodanote-content-publisher.php:2643 kodanote-content-publisher.php:2679
+#: kodanote-content-publisher.php:2722 kodanote-content-publisher.php:2757
+#: kodanote-content-publisher.php:3280
+msgid "Insufficient permissions"
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:282
+msgid ""
+"Another sync is still running, so this one was skipped. Wait a few minutes "
+"and try again."
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:307
+msgid "Sync failed: "
+msgstr ""
+
+#: includes/class-kodanote-notifications.php:331
+msgid "Notification dismissed"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:201
+msgid "Article already being published by another process"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:212
+msgid "Article not found in sync table"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:516
+msgid "Failed to create WordPress post"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:643
+#: kodanote-content-publisher.php:3436
+msgid "Article published successfully"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:1080
+msgid "Invalid existing post object"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:1085
+msgid "Article content is empty"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:1250
+msgid "WordPress post update returned invalid result"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:1268
+#, php-format
+msgid "Post %d does not exist or is not published after update (status: %s)"
+msgstr ""
+
+#: includes/class-kodanote-publisher.php:1570
+msgid "Article updated successfully"
+msgstr ""
+
+#. translators: 1: article title, 2: error message
+#: includes/class-kodanote-publisher.php:1610
+#, php-format
+msgid "Failed to publish \"%1$s\": %2$s"
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:42 kodanote-content-publisher.php:246
+msgid "Every Minute"
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:48 kodanote-content-publisher.php:252
+msgid "Every 5 Minutes"
+msgstr ""
+
+#. translators: %d: number of consecutive skipped syncs
+#: includes/class-kodanote-scheduler.php:196
+#, php-format
+msgid ""
+"Sync has been blocked by an unfinished sync %d times in a row. Articles are "
+"not being published."
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:279
+msgid ""
+"Your server could not connect to the configured publishing API. Check the "
+"API URL and service availability, or ask your hosting provider to check "
+"outbound connectivity."
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:282
+msgid ""
+"The connection to the configured publishing API timed out. Check service "
+"availability and contact your hosting provider if the problem persists."
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:285
+msgid ""
+"Your server cannot resolve the configured publishing API hostname. Check the "
+"API URL and DNS settings, or contact your hosting provider."
+msgstr ""
+
+#: includes/class-kodanote-scheduler.php:288
+msgid ""
+"There is an SSL/TLS error connecting to the configured publishing API. Check "
+"the service certificate and ask your hosting provider to check TLS support."
+msgstr ""
+
+#: kodanote-content-publisher.php:301 templates/admin-settings.php:51
+msgid "API Configuration"
+msgstr ""
+
+#: kodanote-content-publisher.php:308 templates/admin-settings.php:93
+msgid "Publishing Settings"
+msgstr ""
+
+#: kodanote-content-publisher.php:315
+msgid "Debug Settings"
+msgstr ""
+
+#: kodanote-content-publisher.php:323 templates/admin-settings.php:68
+msgid "API Key"
+msgstr ""
+
+#: kodanote-content-publisher.php:334 templates/admin-settings.php:96
+msgid "Default Category"
+msgstr ""
+
+#: kodanote-content-publisher.php:342 templates/admin-settings.php:110
+msgid "Default Author"
+msgstr ""
+
+#: kodanote-content-publisher.php:350
+msgid "Debug Mode"
+msgstr ""
+
+#: kodanote-content-publisher.php:362 kodanote-content-publisher.php:363
+msgid "Kodanote"
+msgstr ""
+
+#: kodanote-content-publisher.php:373 kodanote-content-publisher.php:374
+msgid "Dashboard"
+msgstr ""
+
+#: kodanote-content-publisher.php:382 kodanote-content-publisher.php:383
+#: kodanote-content-publisher.php:590 templates/admin-dashboard.php:243
+msgid "Settings"
+msgstr ""
+
+#: kodanote-content-publisher.php:429
+msgid "Connecting..."
+msgstr ""
+
+#: kodanote-content-publisher.php:430
+msgid "Connected!"
+msgstr ""
+
+#: kodanote-content-publisher.php:431
+msgid "Error occurred"
+msgstr ""
+
+#: kodanote-content-publisher.php:432
+msgid "Syncing articles..."
+msgstr ""
+
+#: kodanote-content-publisher.php:433
+msgid "Publishing article..."
+msgstr ""
+
+#: kodanote-content-publisher.php:434
+msgid "Testing..."
+msgstr ""
+
+#: kodanote-content-publisher.php:435
+msgid "Testing connection..."
+msgstr ""
+
+#: kodanote-content-publisher.php:438
+msgid "Copied!"
+msgstr ""
+
+#: kodanote-content-publisher.php:439
+msgid "Failed to copy to clipboard."
+msgstr ""
+
+#: kodanote-content-publisher.php:440
+msgid "Are you sure you want to publish this article?"
+msgstr ""
+
+#: kodanote-content-publisher.php:441
+#, php-format
+msgid "Are you sure you want to publish %d articles?"
+msgstr ""
+
+#: kodanote-content-publisher.php:442
+#, php-format
+msgid "Are you sure you want to delete \"%s\"? This action cannot be undone."
+msgstr ""
+
+#: kodanote-content-publisher.php:443
+msgid ""
+"Are you sure you want to reset all settings to defaults? This action cannot "
+"be undone."
+msgstr ""
+
+#: kodanote-content-publisher.php:444
+msgid ""
+"Are you sure you want to regenerate your API key? This will invalidate the "
+"current key."
+msgstr ""
+
+#: kodanote-content-publisher.php:445
+msgid ""
+"Are you sure you want to clear all sync data? This action cannot be undone."
+msgstr ""
+
+#: kodanote-content-publisher.php:446
+msgid "Please select articles to publish."
+msgstr ""
+
+#: kodanote-content-publisher.php:447
+msgid "Article published successfully!"
+msgstr ""
+
+#: kodanote-content-publisher.php:448
+msgid "Publish failed. Please try again."
+msgstr ""
+
+#: kodanote-content-publisher.php:449
+msgid "Articles synced successfully!"
+msgstr ""
+
+#: kodanote-content-publisher.php:450
+msgid "Sync failed. Please try again."
+msgstr ""
+
+#: kodanote-content-publisher.php:451
+#, php-format
+msgid "%d articles synced"
+msgstr ""
+
+#: kodanote-content-publisher.php:452
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: kodanote-content-publisher.php:453
+msgid "Failed to save settings. Please try again."
+msgstr ""
+
+#: kodanote-content-publisher.php:454
+msgid "Debug mode enabled successfully."
+msgstr ""
+
+#: kodanote-content-publisher.php:455
+msgid "Debug mode disabled successfully."
+msgstr ""
+
+#: kodanote-content-publisher.php:456
+msgid "Failed to update debug settings."
+msgstr ""
+
+#: kodanote-content-publisher.php:457 templates/admin-dashboard.php:270
+msgid "Article Details"
+msgstr ""
+
+#: kodanote-content-publisher.php:458 templates/admin-dashboard.php:278
+msgid "Close"
+msgstr ""
+
+#: kodanote-content-publisher.php:459
+msgid "Bulk Publish"
+msgstr ""
+
+#: kodanote-content-publisher.php:460
+#, php-format
+msgid "Bulk Publish (%d)"
+msgstr ""
+
+#: kodanote-content-publisher.php:461
+msgid "Sync Complete!"
+msgstr ""
+
+#: kodanote-content-publisher.php:462
+msgid "Sync completed successfully! Your content is up to date."
+msgstr ""
+
+#: kodanote-content-publisher.php:463
+#, php-format
+msgid "Successfully synced %d article(s)! Your content is now up to date."
+msgstr ""
+
+#: kodanote-content-publisher.php:464
+msgid "Sync Failed"
+msgstr ""
+
+#: kodanote-content-publisher.php:465
+msgid "This feature is not yet available."
+msgstr ""
+
+#: kodanote-content-publisher.php:466
+msgid "Coming soon!"
+msgstr ""
+
+#: kodanote-content-publisher.php:1346 kodanote-content-publisher.php:1347
+msgid "Kodanote Setup"
+msgstr ""
+
+#: kodanote-content-publisher.php:1368
+msgid "Kodanote Setup Required"
+msgstr ""
+
+#: kodanote-content-publisher.php:1369
+msgid ""
+"Welcome to Kodanote! Please complete the setup by entering your API key."
+msgstr ""
+
+#: kodanote-content-publisher.php:1371
+msgid "Complete Setup"
+msgstr ""
+
+#: kodanote-content-publisher.php:1432
+msgid "Setup Complete!"
+msgstr ""
+
+#: kodanote-content-publisher.php:1435
+msgid "Your Kodanote plugin is now configured and ready to use."
+msgstr ""
+
+#: kodanote-content-publisher.php:1442
+msgid "First Sync Complete!"
+msgstr ""
+
+#. translators: %d: number of articles synced
+#: kodanote-content-publisher.php:1447
+#, php-format
+msgid ""
+"Successfully synced <strong>%d article(s)</strong> from your Kodanote "
+"account!"
+msgstr ""
+
+#: kodanote-content-publisher.php:1451
+msgid "Visit your dashboard to view and manage synced articles"
+msgstr ""
+
+#: kodanote-content-publisher.php:1452
+msgid "Articles are ready to be published to your site"
+msgstr ""
+
+#: kodanote-content-publisher.php:1453 kodanote-content-publisher.php:1493
+msgid "Configure publishing settings and preferences"
+msgstr ""
+
+#: kodanote-content-publisher.php:1454
+msgid "Articles will sync automatically going forward"
+msgstr ""
+
+#: kodanote-content-publisher.php:1460
+msgid "No Articles Found"
+msgstr ""
+
+#: kodanote-content-publisher.php:1463
+msgid "Your Kodanote account doesn't have any articles yet."
+msgstr ""
+
+#: kodanote-content-publisher.php:1466
+msgid "Visit your Kodanote dashboard to create your first article"
+msgstr ""
+
+#: kodanote-content-publisher.php:1467
+msgid "Once created, articles will automatically sync to WordPress"
+msgstr ""
+
+#: kodanote-content-publisher.php:1468
+msgid "Configure publishing settings in the meantime"
+msgstr ""
+
+#: kodanote-content-publisher.php:1474
+msgid "Sync Issue"
+msgstr ""
+
+#: kodanote-content-publisher.php:1480
+msgid "Check your API key is correct in Settings"
+msgstr ""
+
+#: kodanote-content-publisher.php:1481
+msgid "Try syncing manually from your dashboard"
+msgstr ""
+
+#: kodanote-content-publisher.php:1482
+msgid "Contact support if the issue persists"
+msgstr ""
+
+#: kodanote-content-publisher.php:1488
+msgid "What's Next?"
+msgstr ""
+
+#: kodanote-content-publisher.php:1491
+msgid "Visit your Kodanote dashboard to manage articles"
+msgstr ""
+
+#: kodanote-content-publisher.php:1492
+msgid "Sync articles from your Kodanote account"
+msgstr ""
+
+#: kodanote-content-publisher.php:1494
+msgid "Start publishing SEO-optimized content automatically"
+msgstr ""
+
+#: kodanote-content-publisher.php:1501 kodanote-content-publisher.php:1618
+msgid "This is the category your articles will be published in:"
+msgstr ""
+
+#: kodanote-content-publisher.php:1508 kodanote-content-publisher.php:1625
+#: kodanote-content-publisher.php:2581 templates/admin-dashboard.php:55
+#: templates/admin-settings.php:102
+msgid "Select Category"
+msgstr ""
+
+#: kodanote-content-publisher.php:1512 kodanote-content-publisher.php:1629
+#: templates/admin-dashboard.php:61
+msgid "You can change this later in Settings."
+msgstr ""
+
+#: kodanote-content-publisher.php:1521
+msgid "Go to Kodanote Dashboard"
+msgstr ""
+
+#: kodanote-content-publisher.php:1527
+msgid "Need help? Contact Kodanote support for assistance."
+msgstr ""
+
+#: kodanote-content-publisher.php:1545 kodanote-content-publisher.php:1742
+msgid "Saving..."
+msgstr ""
+
+#: kodanote-content-publisher.php:1579
+msgid "Welcome to Kodanote"
+msgstr ""
+
+#: kodanote-content-publisher.php:1582
+msgid "Let's get you set up with automated article publishing!"
+msgstr ""
+
+#: kodanote-content-publisher.php:1598
+msgid "Connecting to Kodanote..."
+msgstr ""
+
+#: kodanote-content-publisher.php:1601
+msgid ""
+"We're trying to verify your plugin automatically. This may take a few "
+"seconds."
+msgstr ""
+
+#: kodanote-content-publisher.php:1612
+msgid "Connected Successfully!"
+msgstr ""
+
+#: kodanote-content-publisher.php:1635
+msgid "Continue to Dashboard →"
+msgstr ""
+
+#: kodanote-content-publisher.php:1646
+msgid "Auto-Connect Not Available"
+msgstr ""
+
+#: kodanote-content-publisher.php:1650
+msgid "No problem! Just enter your API key below."
+msgstr ""
+
+#: kodanote-content-publisher.php:1664 templates/admin-settings.php:75
+msgid "Your Kodanote API Key"
+msgstr ""
+
+#: kodanote-content-publisher.php:1676
+msgid ""
+"You can find your API key in your Kodanote dashboard under Integrations."
+msgstr ""
+
+#: kodanote-content-publisher.php:1682
+msgid "What's Already Configured"
+msgstr ""
+
+#: kodanote-content-publisher.php:1685
+msgid "Articles will be published automatically when synced"
+msgstr ""
+
+#: kodanote-content-publisher.php:1686
+msgid "Plugin verification is ready to use"
+msgstr ""
+
+#: kodanote-content-publisher.php:1687
+msgid "Default category and author settings are configured"
+msgstr ""
+
+#: kodanote-content-publisher.php:1693
+msgid "Complete Setup & Start Publishing"
+msgstr ""
+
+#: kodanote-content-publisher.php:1700
+msgid "Need help? Visit our documentation or contact support."
+msgstr ""
+
+#: kodanote-content-publisher.php:2559
+msgid "Configure your Kodanote API connection settings."
+msgstr ""
+
+#: kodanote-content-publisher.php:2563
+msgid "Configure how articles from Kodanote should be published on your site."
+msgstr ""
+
+#: kodanote-content-publisher.php:2569
+msgid "Get your API key from your Kodanote dashboard."
+msgstr ""
+
+#: kodanote-content-publisher.php:2590 templates/admin-settings.php:115
+msgid "Select Author"
+msgstr ""
+
+#: kodanote-content-publisher.php:2598
+msgid "Configure debugging options for troubleshooting."
+msgstr ""
+
+#: kodanote-content-publisher.php:2607
+msgid "Enable debug logging to browser console"
+msgstr ""
+
+#: kodanote-content-publisher.php:2608
+msgid ""
+"Debug information will be logged to your browser's console when enabled."
+msgstr ""
+
+#: kodanote-content-publisher.php:2620
+msgid "Settings saved successfully"
+msgstr ""
+
+#: kodanote-content-publisher.php:2633
+msgid "Category saved"
+msgstr ""
+
+#: kodanote-content-publisher.php:2636
+msgid "Invalid category"
+msgstr ""
+
+#: kodanote-content-publisher.php:2670
+msgid "Connection successful"
+msgstr ""
+
+#: kodanote-content-publisher.php:2728
+msgid "Article ID is required."
+msgstr ""
+
+#: kodanote-content-publisher.php:2746
+msgid "Failed to publish article: "
+msgstr ""
+
+#: kodanote-content-publisher.php:2766
+msgid "Debug mode updated successfully"
+msgstr ""
+
+#: kodanote-content-publisher.php:2872
+msgid "Authorization header is required"
+msgstr ""
+
+#: kodanote-content-publisher.php:2883
+msgid "Invalid API key"
+msgstr ""
+
+#: kodanote-content-publisher.php:2899
+msgid "Request signature is required"
+msgstr ""
+
+#: kodanote-content-publisher.php:2919
+msgid "Invalid request signature"
+msgstr ""
+
+#. translators: %1$d: maximum number of requests allowed, %2$d: time window in seconds
+#: kodanote-content-publisher.php:3073
+#, php-format
+msgid "Rate limit exceeded. Max %1$d requests per %2$d seconds."
+msgstr ""
+
+#: kodanote-content-publisher.php:3172
+msgid ""
+"Configure the Kodanote publishing API URL in wp-config.php before connecting."
+msgstr ""
+
+#: kodanote-content-publisher.php:3316
+msgid "Failed to sync article from Kodanote"
+msgstr ""
+
+#: kodanote-content-publisher.php:3343
+msgid "Article not found"
+msgstr ""
+
+#: kodanote-content-publisher.php:3388
+msgid "Article republished successfully"
+msgstr ""
+
+#. translators: %d: number of articles synced
+#: kodanote-content-publisher.php:3518
+#, php-format
+msgid "Sync completed: %d articles synced"
+msgstr ""
+
+#: kodanote-content-publisher.php:4173
+msgid "Kodanote Managed Article"
+msgstr ""
+
+#: kodanote-content-publisher.php:4176
+msgid ""
+"You can edit this article here. If you change the body content in WordPress, "
+"Kodanote will remember that and will not overwrite the body on future syncs. "
+"Title, SEO settings, categories, tags, and images can still sync from "
+"Kodanote."
+msgstr ""
+
+#: kodanote-content-publisher.php:4290
+msgid "Managed by Kodanote"
+msgstr ""
+
+#: kodanote-content-publisher.php:5257
+msgid ""
+"This frontend template is not installed. Manage content from Kodanote in the "
+"WordPress admin."
+msgstr ""
+
+#: templates/admin-dashboard.php:27 templates/admin-dashboard.php:256
+msgid "Kodanote Dashboard"
+msgstr ""
+
+#: templates/admin-dashboard.php:28
+msgid "Publish content from Kodanote to WordPress."
+msgstr ""
+
+#: templates/admin-dashboard.php:39
+msgid "Uncategorized"
+msgstr ""
+
+#: templates/admin-dashboard.php:43
+msgid "Connected automatically!"
+msgstr ""
+
+#: templates/admin-dashboard.php:44
+msgid ""
+"Your WordPress site is now linked to Kodanote. Articles will sync "
+"automatically."
+msgstr ""
+
+#: templates/admin-dashboard.php:48
+msgid "Articles will be published in:"
+msgstr ""
+
+#: templates/admin-dashboard.php:58
+msgid "Saved"
+msgstr ""
+
+#: templates/admin-dashboard.php:92
+msgid "Setup complete!"
+msgstr ""
+
+#: templates/admin-dashboard.php:93
+msgid "Your Kodanote plugin is ready. Articles will sync automatically."
+msgstr ""
+
+#: templates/admin-dashboard.php:102 templates/admin-dashboard.php:160
+msgid "ago"
+msgstr ""
+
+#: templates/admin-dashboard.php:106 templates/admin-settings.php:37
+msgid "Article sync is failing"
+msgstr ""
+
+#. translators: %s: human-readable time difference (e.g. "2 hours ago")
+#: templates/admin-dashboard.php:115
+#, php-format
+msgid "Last error: %s"
+msgstr ""
+
+#: templates/admin-dashboard.php:130
+msgid "Total Articles"
+msgstr ""
+
+#: templates/admin-dashboard.php:140
+msgid "Published"
+msgstr ""
+
+#: templates/admin-dashboard.php:150
+msgid "Pending"
+msgstr ""
+
+#: templates/admin-dashboard.php:160
+msgid "Never"
+msgstr ""
+
+#: templates/admin-dashboard.php:162
+msgid "Last Sync"
+msgstr ""
+
+#: templates/admin-dashboard.php:170
+msgid "Recent Articles"
+msgstr ""
+
+#: templates/admin-dashboard.php:178
+msgid "Title"
+msgstr ""
+
+#: templates/admin-dashboard.php:179
+msgid "Status"
+msgstr ""
+
+#: templates/admin-dashboard.php:180
+msgid "Synced"
+msgstr ""
+
+#: templates/admin-dashboard.php:205
+msgid "No articles yet"
+msgstr ""
+
+#: templates/admin-dashboard.php:206
+msgid "Articles from Kodanote will appear here once synced."
+msgstr ""
+
+#: templates/admin-dashboard.php:209
+msgid "Sync Your First Articles"
+msgstr ""
+
+#: templates/admin-dashboard.php:219
+msgid "Quick Actions"
+msgstr ""
+
+#: templates/admin-dashboard.php:229
+msgid "Sync Articles"
+msgstr ""
+
+#: templates/admin-dashboard.php:230
+msgid "Import latest articles from Kodanote"
+msgstr ""
+
+#: templates/admin-dashboard.php:244
+msgid "Configure Kodanote integration"
+msgstr ""
+
+#: templates/admin-dashboard.php:246
+msgid "Configure"
+msgstr ""
+
+#: templates/admin-dashboard.php:257
+msgid "Manage your content"
+msgstr ""
+
+#: templates/admin-dashboard.php:259
+msgid "Open Kodanote"
+msgstr ""
+
+#: templates/admin-dashboard.php:277
+msgid "Publish Article"
+msgstr ""
+
+#: templates/admin-settings.php:24
+msgid "Kodanote Settings"
+msgstr ""
+
+#: templates/admin-settings.php:25
+msgid "Connect your WordPress site to Kodanote."
+msgstr ""
+
+#: templates/admin-settings.php:54
+msgid "API Endpoint"
+msgstr ""
+
+#: templates/admin-settings.php:57
+msgid "Configured"
+msgstr ""
+
+#: templates/admin-settings.php:59
+msgid "Not configured"
+msgstr ""
+
+#: templates/admin-settings.php:60
+msgid ""
+"Publishing is unavailable until a Kodanote API endpoint is configured. No "
+"endpoint is enabled by default."
+msgstr ""
+
+#: templates/admin-settings.php:63
+msgid ""
+"Set KODANOTE_API_BASE_URL in wp-config.php to the API base URL supplied by "
+"your Kodanote administrator. Configure the endpoint before saving your API "
+"key and testing the connection."
+msgstr ""
+
+#: templates/admin-settings.php:77
+msgid ""
+"Use the API key supplied for this site by your Kodanote administrator. Save "
+"your settings before testing the connection."
+msgstr ""
+
+#: templates/admin-settings.php:85
+msgid "Test API Connection"
+msgstr ""
+
+#: templates/admin-settings.php:105
+msgid ""
+"Default category for new Kodanote articles. If you change an article's "
+"category in WordPress, it will be preserved on future updates."
+msgstr ""
+
+#: templates/admin-settings.php:118
+msgid "Default author for Kodanote articles."
+msgstr ""
+
+#: templates/admin-settings.php:127
+msgid "Debug Information"
+msgstr ""
+
+#: templates/admin-settings.php:130
+msgid "Debug Logging"
+msgstr ""
+
+#: templates/admin-settings.php:138
+msgid "Enable debug logging"
+msgstr ""
+
+#. translators: %s: log file path
+#: templates/admin-settings.php:144
+#, php-format
+msgid "Log file: %s"
+msgstr ""
+
+#: templates/admin-settings.php:154
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin-settings.php:159
+msgid "System Information"
+msgstr ""
+
+#: templates/admin-settings.php:162
+msgid "Plugin Version"
+msgstr ""
+
+#: templates/admin-settings.php:166
+msgid "WordPress Version"
+msgstr ""
+
+#: templates/admin-settings.php:170
+msgid "PHP Version"
+msgstr ""
+
+#: templates/admin-settings.php:177
+msgid "Maintenance Actions"
+msgstr ""
+
+#: templates/admin-settings.php:178
+msgid "Use these actions carefully as they cannot be undone."
+msgstr ""
+
+#: templates/admin-settings.php:181
+msgid "Reset All Settings"
+msgstr ""

@@ -1,0 +1,136 @@
+/**
+ * Modified for Kodanote on 2026-09-25. Licensed under GPL-2.0-or-later; see LICENSE and NOTICE.md.
+ * Kodanote Frontend Styles for Infographics
+ * 
+ * These styles provide fallback and enhancement for infographics
+ * in case Tailwind CSS doesn't load properly
+ */
+
+.kodanote-infographic-wrapper {
+    margin: 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.kodanote-infographic-container {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Ensure infographics are responsive */
+.kodanote-infographic-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure SVG icons render properly */
+.kodanote-infographic-container svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Basic table styling for comparison tables in infographics */
+.kodanote-infographic-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kodanote-infographic-container table th,
+.kodanote-infographic-container table td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Ensure proper spacing for infographic sections */
+.kodanote-infographic-container > div {
+    margin-bottom: 1rem;
+}
+
+/* Responsive YouTube embed wrapper (inline styles get stripped by KSES) */
+.youtube-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1.5em 0;
+}
+
+.youtube-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*
+ * Key Takeaways and Table of Contents — structural fixes only.
+ * Visual styling belongs to the active theme so dark and custom designs are
+ * never replaced by Kodanote backgrounds, borders, padding, or spacing.
+ */
+.kodanote .key-takeaways,
+.kodanote .table-of-contents {
+    writing-mode: horizontal-tb;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+}
+
+.kodanote .key-takeaways h2,
+.kodanote .key-takeaways h3,
+.kodanote .table-of-contents h2,
+.kodanote .table-of-contents h3 {
+    writing-mode: horizontal-tb;
+    display: block;
+    width: 100%;
+}
+
+.kodanote .key-takeaways ul,
+.kodanote .table-of-contents ul {
+    writing-mode: horizontal-tb;
+    display: block;
+}
+
+.kodanote .key-takeaways li,
+.kodanote .table-of-contents li {
+    writing-mode: horizontal-tb;
+    display: list-item;
+}
+
+.kodanote-heading-anchor {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+    writing-mode: horizontal-tb;
+    display: inline;
+}
+
+/*
+ * Fallback body for themes that render ACF/bricks instead of the_content().
+ * Spacing only — colors and fonts stay with the theme.
+ */
+.kodanote-theme-content-fallback {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+}
+
+.kodanote-theme-content-fallback > * + * {
+    margin-top: 1em;
+}
+
+.kodanote-theme-content-fallback img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Print styles - ensure infographics print nicely */
+@media print {
+    .kodanote-infographic-wrapper {
+        page-break-inside: avoid;
+    }
+}
+

@@ -1,0 +1,654 @@
+/**
+ * Modified for Kodanote on 2026-09-25. Licensed under GPL-2.0-or-later; see LICENSE and NOTICE.md.
+ * Kodanote Admin Styles
+ */
+
+.kodanote-admin-header {
+    background: #0b0b0d;
+    color: white;
+    padding: 20px;
+    margin: -20px -20px 30px -20px;
+    border-radius: 8px;
+}
+
+.kodanote-admin-header h1 {
+    margin: 0;
+    color: inherit;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.kodanote-admin-header p {
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+    font-size: 1em;
+}
+
+.kodanote-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.kodanote-stat-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kodanote-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.kodanote-stat-icon {
+    width: 50px;
+    height: 50px;
+    background: #12a594;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    color: #0b0b0d;
+    font-size: 20px;
+}
+
+.kodanote-stat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kodanote-stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0b0b0d;
+    margin-bottom: 5px;
+}
+
+.kodanote-stat-label {
+    color: #0b0b0d;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.kodanote-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.kodanote-section-header h2 {
+    margin: 0;
+    color: #0b0b0d;
+    font-size: 1.5em;
+}
+
+.kodanote-section-header .kodanote-section-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.kodanote-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.kodanote-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kodanote-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.kodanote-card-header {
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.kodanote-card-title {
+    margin: 0;
+    color: #0b0b0d;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.kodanote-card-subtitle {
+    margin: 5px 0 0 0;
+    color: #646970;
+    font-size: 0.9em;
+}
+
+.kodanote-card-content {
+    padding: 20px;
+}
+
+.kodanote-card-actions {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    gap: 10px;
+}
+
+.kodanote-status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kodanote-status-published {
+    background: #d4edda;
+    color: #155724;
+}
+
+.kodanote-status-draft {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.kodanote-status-pending {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.kodanote-status-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.kodanote-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #12a594;
+    border-radius: 50%;
+    animation: kodanote-spin 1s linear infinite;
+}
+
+@keyframes kodanote-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.kodanote-button-primary {
+    background: #12a594;
+    color: #0b0b0d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.kodanote-button-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(18, 165, 148, 0.3);
+}
+
+.kodanote-button-secondary {
+    background: #f8f9fa;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.kodanote-button-secondary:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.kodanote-form-group {
+    margin-bottom: 20px;
+}
+
+.kodanote-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0b0b0d;
+    font-weight: 500;
+}
+
+.kodanote-form-group input[type="text"],
+.kodanote-form-group input[type="password"],
+.kodanote-form-group input[type="url"],
+.kodanote-form-group select,
+.kodanote-form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kodanote-form-group input[type="text"]:focus,
+.kodanote-form-group input[type="password"]:focus,
+.kodanote-form-group input[type="url"]:focus,
+.kodanote-form-group select:focus,
+.kodanote-form-group textarea:focus {
+    outline: none;
+    border-color: #12a594;
+    box-shadow: 0 0 0 2px rgba(18, 165, 148, 0.15);
+}
+
+.kodanote-form-group .description {
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.kodanote-notice {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid;
+}
+
+.kodanote-notice-success {
+    background: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.kodanote-notice-error {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.kodanote-notice-warning {
+    background: #fff3cd;
+    border-left-color: #ffc107;
+    color: #856404;
+}
+
+.kodanote-notice-info {
+    background: #d1ecf1;
+    border-left-color: #17a2b8;
+    color: #0c5460;
+}
+
+.kodanote-table-responsive {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.kodanote-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kodanote-table th,
+.kodanote-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.kodanote-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #0b0b0d;
+}
+
+.kodanote-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.kodanote-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.kodanote-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.kodanote-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.kodanote-modal.show .kodanote-modal-content {
+    transform: scale(1);
+}
+
+.kodanote-modal-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kodanote-modal-header h2 {
+    margin: 0;
+    color: #0b0b0d;
+    font-size: 1.5em;
+}
+
+.kodanote-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c757d;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.kodanote-modal-close:hover {
+    background: #f8f9fa;
+}
+
+.kodanote-modal-body {
+    padding: 20px 25px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.kodanote-modal-footer {
+    padding: 15px 25px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kodanote-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kodanote-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kodanote-admin-header {
+        margin: -10px -10px 20px -10px;
+        padding: 15px;
+    }
+
+    .kodanote-admin-header h1 {
+        font-size: 1.5em;
+    }
+
+    .kodanote-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .kodanote-card-actions {
+        flex-direction: column;
+    }
+
+    .kodanote-modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+}
+
+/* Dashboard Page Styles */
+.kodanote-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.kodanote-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.kodanote-brand-mark {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #0b0b0d;
+}
+
+.kodanote-title p {
+    margin: 6px 0 0;
+    color: #646970;
+    font-size: 14px;
+}
+
+#kodanote-dashboard .button-primary,
+#kodanote-settings .button-primary {
+    background: #12a594;
+    border-color: #12a594;
+    color: #0b0b0d;
+}
+
+#kodanote-dashboard .button-primary:hover,
+#kodanote-settings .button-primary:hover {
+    background: #15b6a3;
+    border-color: #15b6a3;
+    color: #0b0b0d;
+}
+
+#kodanote-dashboard .button-primary:focus,
+#kodanote-settings .button-primary:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #08776b;
+}
+
+.kodanote-title h1 {
+    margin: 0;
+    color: #0b0b0d;
+    font-size: 2em;
+}
+
+.kodanote-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.kodanote-empty-icon {
+    font-size: 4em;
+    color: #c3c4c7;
+    margin-bottom: 20px;
+}
+
+.kodanote-empty-state h3 {
+    margin: 0 0 10px 0;
+    color: #0b0b0d;
+}
+
+.kodanote-empty-state p {
+    color: #646970;
+    margin-bottom: 20px;
+}
+
+.kodanote-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.kodanote-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kodanote-articles-table {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Quick Actions uses the same .kodanote-stats-grid as stats section */
+
+/* Notification Bar Styles */
+.kodanote-sync-notice,
+.kodanote-cron-notice {
+    border-left-width: 4px;
+    padding: 0 !important;
+}
+
+.kodanote-notification-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.kodanote-notification-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.kodanote-sync-notice .kodanote-notification-icon {
+    background: #fcf3cf;
+    color: #f39c12;
+}
+
+.kodanote-cron-notice .kodanote-notification-icon {
+    background: #fadbd8;
+    color: #e74c3c;
+}
+
+.kodanote-notification-message {
+    flex: 1;
+}
+
+.kodanote-notification-message p {
+    margin: 0.5em 0;
+}
+
+.kodanote-notification-message p:first-child {
+    margin-top: 0;
+}
+
+.kodanote-notification-message ul {
+    margin: 10px 0;
+}
+
+.kodanote-notification-actions {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2px;
+}
+
+.kodanote-sync-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.kodanote-sync-now-btn .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.kodanote-sync-now-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.kodanote-sync-now-btn.syncing .dashicons {
+    animation: kodanote-spin 1s linear infinite;
+}
+
+/* Responsive adjustments for notifications */
+@media (max-width: 782px) {
+    .kodanote-notification-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kodanote-notification-actions {
+        width: 100%;
+    }
+
+    .kodanote-sync-now-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
